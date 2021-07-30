@@ -3,7 +3,7 @@ const binaryToDecimal = (num) => {
   digit = num.toString();
 
   for (let i = digit.length, j = 0; i > 0, j < digit.length; i--, j++) {
-    decimal = decimal + Number(digit.charAt(i - 1)) * Math.pow(2, j);
+    decimal = decimal + Number(digit.charAt(i - 1)) * 2 ** j;
   }
   return decimal;
 };
